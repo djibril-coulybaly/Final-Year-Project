@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+	<script src="stops.geojson" type="text/javascript"></script>
+	<script src="poles.geojson" type="text/javascript"></script>
+	<script src="shelters.geojson" type="text/javascript"></script>
+	<script src="rtpis.geojson" type="text/javascript"></script>
+	<style>
+		#map {position: absolute;top: 0; bottom: 0; left: 0;right: 0;}
+	</style>
+</head>
+<body>
+	<div id = "map"></div>
+	<script>
+		var map = L.map('map');
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+		var stopMarkers = {
+			radius: 6,
+			fillColor: "#ff0000",
+			color: "#000000",
+			weight: .5,
+			opacity: 1,
+			fillOpacity: 0.9
+		};
+		var poleMarkers = {
+			radius: 4,
+			fillColor: "#ffbb00",
+			color: "#000000",
+			weight: .5,
+			opacity: 1,
+			fillOpacity: 0.7
+		};
+		var shelterMarkers = {
+			radius: 4,
+			fillColor: "#35e84a",
+			color: "#000000",
+			weight: .5,
+			opacity: 1,
+			fillOpacity: 0.7
+		};
+		var rtpiMarkers = {
+			radius: 4,
+			fillColor: "#7200ff",
+			color: "#000000",
+			weight: .5,
+			opacity: 1,
+			fillOpacity: 0.7
+		};
+		function forEachFeature(feature, layer) {
+			var popupContent = '<table>';
+			for (var p in feature.properties) {
+				popupContent += '<tr><td>' + p + '</td><td>'+ feature.properties[p] + '</td></tr>';
+			}
+			popupContent += '</table>';
+			layer.bindPopup(popupContent);
+		};
+		var stopLocations = L.geoJSON(stops, { onEachFeature: forEachFeature, 
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, stopMarkers);
+			}
+		});
+		var poleLocations = L.geoJSON(poles, { onEachFeature: forEachFeature, 
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, poleMarkers);
+			}
+		});
+		var shelterLocations = L.geoJSON(shelters, { onEachFeature: forEachFeature, 
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, shelterMarkers);
+			}
+		});
+		var rtpiLocations = L.geoJSON(rtpis, { onEachFeature: forEachFeature, 
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, rtpiMarkers);
+			}
+		});
+		map.fitBounds(stopLocations.getBounds(), {padding: [12, 12]});
+		var Individual = {
+			"Stops": stopLocations,
+			"Shelters": shelterLocations,
+			"Poles": poleLocations,
+			"RTPI's": rtpiLocations
+		};
+		stopLocations.addTo(map);
+		L.control.layers(Individual).addTo(map);
+	</script>
+</body>
+</html>
