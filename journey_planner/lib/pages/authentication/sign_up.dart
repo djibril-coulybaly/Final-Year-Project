@@ -31,13 +31,14 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue[100],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.lightBlue[400],
         elevation: 0.0,
-        title: const Text('Sign up'),
+        title: const Text('Sign Up'),
         actions: <Widget>[
           TextButton.icon(
+            style: TextButton.styleFrom(primary: Colors.white),
             icon: const Icon(Icons.person),
             label: const Text('Sign In'),
             onPressed: () => widget.toggleView(),
@@ -182,7 +183,7 @@ class _SignUpState extends State<SignUp> {
                   const SizedBox(height: 20.0),
                   ElevatedButton(
                       style:
-                          ElevatedButton.styleFrom(primary: Colors.pink[400]),
+                          ElevatedButton.styleFrom(primary: Colors.orange[400]),
                       // color: Colors.pink[400],
                       child: const Text(
                         'Sign Up',
