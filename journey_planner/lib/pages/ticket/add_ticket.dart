@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Activity extends StatefulWidget {
-  const Activity({Key? key}) : super(key: key);
+class AddTicket extends StatefulWidget {
+  AddTicket({Key? key}) : super(key: key);
 
   @override
-  State<Activity> createState() => _ActivityState();
+  State<AddTicket> createState() => _AddTicketState();
 }
 
-class _ActivityState extends State<Activity> {
+class _AddTicketState extends State<AddTicket> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightBlue[400],
         elevation: 0.0,
-        title: const Text('Activity'),
+        title: const Text('Add Ticket'),
       ),
       body: Stack(),
     );
