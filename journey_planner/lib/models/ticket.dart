@@ -31,7 +31,7 @@ class Ticket {
       };
 
   Ticket.fromSnapshot(snapshot)
-      : ticketID = snapshot.data()['ticket_id'],
+      : ticketID = snapshot.id,
         activated = snapshot.data()['activated'],
         amount = snapshot.data()['amount'],
         date = snapshot.data()['date'].toDate(),
