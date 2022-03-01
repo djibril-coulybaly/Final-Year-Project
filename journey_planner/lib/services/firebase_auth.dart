@@ -6,6 +6,7 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:journey_planner/models/user.dart';
+import 'package:journey_planner/services/firebase_database.dart';
 
 class FAS {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -61,7 +62,30 @@ class FAS {
       UserCredential result = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
       User? user = result.user;
-      print(user);
+
+      /* Creating a new document for the user using the uid that 
+      will store the addtional information that we obtained 
+      in the sign up page  */
+      await FDB(uid: user!.uid).initUpdateUserData(firstName, lastName,
+          addressline1, addressline2, city, county, postcode, phoneNumber);
+
+      /* Creating a new document for the user using the uid that 
+      will store the tickets  */
+      // await FDB(uid: user.uid).initUpdateUserTicket(
+      //     true,
+      //     2.5,
+      //     DateTime.now(),
+      //     "Dublin Bus",
+      //     2.5,
+      //     "39A",
+      //     "hn8irhv87hrburubbr983hr984fb838bf",
+      //     "Student");
+
+      /* Creating a new document for the user using the uid that 
+      will store the travel card  */
+      // await FDB(uid: user.uid)
+      //     .initUpdateUserTravelCard(20.00, 20.00, 30.00, 0.00, 0.00, "Student");
+
       return _userModel(user);
     } catch (error) {
       print(error.toString());
