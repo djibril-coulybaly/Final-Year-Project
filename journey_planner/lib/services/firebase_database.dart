@@ -1,9 +1,23 @@
+/*
+  Student Name: Djibril Coulybaly
+  Student Number: C18423664
+  Date: 15/04/2022
+  Application: Anseo Transit
+  File Name: firebase_database.dart
+  File Description: Functions used to provide transactional queries with Firebase
+*/
+
+// Imports utilised in this file
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FDB {
   /* Reference to the users collection in the firestore cloud database */
   final CollectionReference usersCollection =
       FirebaseFirestore.instance.collection('users');
+
+  /* Reference to the available_seats collection in the firestore cloud database */
+  final CollectionReference availableSeats =
+      FirebaseFirestore.instance.collection('available_seats');
 
   /* Reference to the ticket collection in the firestore cloud database */
   // DocumentReference ticketDocRef = FirebaseFirestore.instance.collection('ticket').doc();
@@ -16,14 +30,16 @@ class FDB {
 
   /* Function to add the additional information that we collected from the user and enter it into our firebase database */
   Future initUpdateUserData(
-      String firstName,
-      String lastName,
-      String addressline1,
-      String addressline2,
-      String city,
-      String county,
-      String postcode,
-      String phoneNumber) async {
+    String firstName,
+    String lastName,
+    String addressline1,
+    String addressline2,
+    String city,
+    String county,
+    String postcode,
+    String phoneNumber,
+    String email,
+  ) async {
     /* Finding the document with the users id in the users collection. If its not found, firebase will create a document with the user id*/
     return await usersCollection.doc(uid).set({
       'first_name': firstName,
@@ -33,7 +49,8 @@ class FDB {
       'city': city,
       'county': county,
       'postcode': postcode,
-      'phone_number': phoneNumber
+      'phone_number': phoneNumber,
+      'email': email,
     });
   }
 
@@ -89,16 +106,50 @@ class FDB {
   }
 
   /* Function to add the travel card information that we want to connect to the user account in the firebase database */
-  Future initUpdateUserTravelCard(double balance, double busCap,
-      double multiModeCap, double trainCap, double tramCap, String type) async {
+  Future initUserTravelCard(double balance, double busCap, double multiModeCap,
+      double trainCap, double tramCap, String type, String ticketDoc) async {
     /* Finding the document with the users id in the users collection. If its not found, firebase will create a document with the user id*/
-    return await usersCollection.doc(uid).collection('travel_card').add({
-      'balance': balance,
-      'bus_cap': busCap,
-      'multi_mode_cap': multiModeCap,
-      'train_cap': trainCap,
-      'tram_cap': tramCap,
-      'type': type
-    });
+    try {
+      await usersCollection
+          .doc(uid)
+          .collection('travel_card')
+          .doc(ticketDoc)
+          .set({
+        'balance': balance,
+        'bus_cap': busCap,
+        'multi_mode_cap': multiModeCap,
+        'train_cap': trainCap,
+        'tram_cap': tramCap,
+        'type': type
+      });
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  /* Function to update the travel card balance that is connected to the user account in the firebase database */
+  Future topUpUserTravelCard(double balance, String travelCardDoc) async {
+    try {
+      await usersCollection
+          .doc(uid)
+          .collection('travel_card')
+          .doc(travelCardDoc)
+          .update({'balance': balance});
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  /* Function to update the travel card balance that is connected to the user account in the firebase database */
+  Future deleteUserTravelCard(String travelCardDoc) async {
+    try {
+      await usersCollection
+          .doc(uid)
+          .collection('travel_card')
+          .doc(travelCardDoc)
+          .delete();
+    } catch (e) {
+      print(e.toString());
+    }
   }
 }

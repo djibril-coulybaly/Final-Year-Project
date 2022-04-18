@@ -1,0 +1,72 @@
+#!/bin/bash
+
+nginxconfig=""
+environment=""
+# see https://riptutorial.com/bash/example/6886/associative-arrays
+declare -A envs
+envs[production]="./data/nginx/app.conf"
+envs[development]="./dev/app.conf"
+declare -A dockercomposes
+dockercomposes[production]="docker-compose.yml"
+dockercomposes[development]="docker-compose.dev.yml"
+
+for i in ${!envs[@]}; do
+	if [ -f "${envs[$i]}" ]; then
+		nginxconfig="${envs[$i]}"
+		environment="$i"
+		echo "EXECUTION IN $i MODE!"
+	fi
+done
+
+if [ -z "$nginxconfig" ]; then
+	echo "Error: neither the development and the production environment are initialized. Please initialize them first using one of the 'init' scripts we provided."
+	exit 1
+fi
+
+if ! [ -n "$1" ]; then
+    echo 'Error: extension name as param is needed (e.g. "tileserver")' >&2
+    exit 1
+fi
+
+if ! [ -d "extensions/$1" ]; then
+	echo "Error: extension '$1' is not a valid one. Valid ones are listed below:" >&2
+	for i in `dir ./extensions`; do
+		echo "$i" >&2
+	done
+	exit 1
+fi
+
+echo "adding extension '$1'"
+
+alreadyInstalled=`cat "$nginxconfig" | grep -i "location /$1"` # checks if the nginx configuration for this extension has been installed already
+if [ -z "$alreadyInstalled" ]; then
+	echo "  altering nginx configuration at '$nginxconfig' ..."
+	sed "s/# extensions/# extensions\n$(sed -e 's/[\&/]/\\&/g' -e 's/$/\\n/' "./extensions/$1/nginx.conf" | tr -d '\n')/" $nginxconfig > app.conf
+	mv ./app.conf $nginxconfig
+fi
+
+if [ -f "extensions/$1/docker-compose.yml.inactive" ]; then
+	echo "  activating docker-compose.yml ..."
+	mv "./extensions/$1/docker-compose.yml.inactive" "./extensions/$1/docker-compose.yml" --verbose
+fi
+
+if ! [ -f "extensions/$1/docker-compose.yml" ]; then
+	echo "Error: activating the docker-compose.yml from extension '$1' failed" >&2
+	exit 1
+fi
+
+# If nginx is running then build/start the extension and restart nginx afterwards
+# Name of "nginx" container is hardcoded here
+nginxActive=`sudo docker-compose -f ${dockercomposes[$environment]} --env-file config.env ps | grep "nginx"`
+if ! [ -z "$nginxActive" ]; then
+	echo "  building or starting extension ..."
+	sudo docker-compose -f "./extensions/$1/docker-compose.yml" --env-file config.env up --detach
+	echo "  waiting 5 seconds before attempting to restart nginx ..."
+	sleep 5
+	echo "  restarting nginx of '${dockercomposes[$environment]}' ..."
+	sudo docker-compose -f ${dockercomposes[$environment]} restart nginx
+fi
+
+echo "trufi extension installed"
+
+exit 0

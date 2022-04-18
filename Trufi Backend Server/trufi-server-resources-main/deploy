@@ -1,0 +1,49 @@
+#!/bin/bash
+# After all the resources has been generated we can deploy it after testing
+dev_trufiserver="../dev-server" # trufi-server instance used to test if everything still works with the new resources (this will be done before deploying to $prod_trufiserver
+prod_trufiserver="../trufi-server" # for copying over to a location on the local machine
+#prod_trufiserver="sftp://<username>@host:/srv/trufi-server" # for copying over to the specified remote ssh
+
+echo "##################################"
+echo "# [STARTED] Deployment pipeline  #"
+echo "##################################"
+
+# 1. Prepare test environment
+if ! [ -d "$dev_trufiserver" ]; then
+	echo "Development trufi-server instance not available at '$dev_trufiserver'!"
+	
+	echo "Will install it to '../dev-server' now ..."
+	oldpwd=$PWD
+	cd ../
+	git clone https://github.com/trufi-association/trufi-server
+	mv trufi-server dev-server --verbose
+	cd $oldpwd
+fi
+echo "reowning files if necessary (as they are probably owned by docker) ..."
+sudo chown -R $SUDO_USER:$SUDO_USER ./data
+echo "copying resources over to development instance at '$dev_trufiserver' ..."
+cp -a "./data/$city/*" "$dev_trufiserver/extensions" --verbose
+
+# 2. Performing tests
+echo "performing automatic tests needs still to be implemented. I will give you 10 seconds to hit Ctrl+C to stop me from deploying to production server '$prod_trufiserver'. The test environment is prepared at '$dev_trufiserver' so get there and do the tests yourself!"
+sleep 10
+
+# 3. Deploying
+echo "transfering resources to '$prod_trufiserver' and overwriting existing ones ..."
+isSFTP=`echo "$prod_trufiserver" | grep "sftp:"`
+if ! [ -z "$isSFTP" ]; then
+	echo "  over sftp ..."
+	# echo "put ./ ./data/extensions/" | sftp -r soren@88.99.240.176
+	echo "put ./data/$city ./data/extensions/" | sftp -r $prod_trufiserver
+else
+	echo "  over local file system ..."
+	cp -a "./data/$city/*" "$prod_trufiserver/extensions" --verbose
+	echo "jumping into the production '$prod_trufiserver' ..."
+	cd $prod_trufiserver
+	echo "restart the production '$prod_trufiserver' ..."
+	. run restart
+fi
+
+echo "##################################"
+echo "# [ENDED] Deployment pipeline    #"
+echo "##################################"

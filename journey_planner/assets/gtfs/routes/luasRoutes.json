@@ -1,0 +1,100 @@
+[
+  {
+    "route_id": "93-GRN-y11-10",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-11",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-12",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-13",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-14",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-15",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-GRN-y11-16",
+    "agency_id": 10000,
+    "route_short_name": "GRN",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-10",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-11",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-12",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-13",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-14",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-15",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  },
+  {
+    "route_id": "93-RED-y11-16",
+    "agency_id": 10000,
+    "route_short_name": "RED",
+    "route_long_name": "",
+    "route_type": 0
+  }
+]

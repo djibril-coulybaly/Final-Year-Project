@@ -1,8 +1,21 @@
 /*
   Student Name: Djibril Coulybaly
   Student Number: C18423664
-  File Description: THis is the ticket model - firebase
-
+  Date: 15/04/2022
+  Application: Anseo Transit
+  File Name: ticket.dart
+  Description: This is the ticket model that we use to structure specific information about the ticket.It has the 
+               same structure that is implented in the firebase database. Each ticket in a users account will
+               hold the follwing:
+               - ID
+               - Activation Status
+               - Amount Charged
+               - Date of Transaction
+               - Name of Operator on day of transaction 
+               - Price of ticket
+               - Route name/number on day of transaction
+               - Transaction ID
+               - Ticket Type
 */
 
 class Ticket {
@@ -33,10 +46,10 @@ class Ticket {
   Ticket.fromSnapshot(snapshot)
       : ticketID = snapshot.id,
         activated = snapshot.data()['activated'],
-        amount = snapshot.data()['amount'],
+        amount = snapshot.data()['amount'].toDouble(),
         date = snapshot.data()['date'].toDate(),
         transportOperator = snapshot.data()['operator'],
-        price = snapshot.data()['price'],
+        price = snapshot.data()['price'].toDouble(),
         route = snapshot.data()['route'],
         transactionID = snapshot.data()['transaction_id'],
         type = snapshot.data()['type'];

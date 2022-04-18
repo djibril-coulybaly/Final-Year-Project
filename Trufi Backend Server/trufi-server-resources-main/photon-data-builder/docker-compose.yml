@@ -1,0 +1,10 @@
+version: '3'
+services:
+  photon_data_builder:
+    image: photon_data_builder
+    build: .
+    environment:
+    # $country
+      - country=$country
+    volumes:
+      - ../data/$city/photon/data:/app/photon_data

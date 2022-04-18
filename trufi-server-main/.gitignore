@@ -1,0 +1,13 @@
+/data/
+/dev/
+letsencrypt/app.temporal.conf
+letsencrypt/data/
+.DS_Store
+*.mbtiles
+*.obj
+*.osm.pbf
+*.pbf
+*.zip
+convertToMultiinstance
+convertToMulti
+convertToMultiPurpose

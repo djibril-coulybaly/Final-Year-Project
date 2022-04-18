@@ -1,0 +1,31 @@
+#!/bin/bash
+# makes sense for production only
+
+container_name="$1"
+moreargs=false
+prefix=`basename "$PWD"`
+
+if ! [ -f "data/nginx/app.conf" ]; then
+    echo 'Error: the production does not appear to be set up but this script is only useful for production use' >&2
+    exit 1
+fi
+
+if ! [ -n "$container_name" ]; then
+    echo 'Error: extension name as param is needed (e.g. "tileserver")' >&2
+    exit 1
+fi
+
+if ! [ -z "$2" ]; then
+	moreargs="true"
+fi
+unset $1
+
+args=()
+if [ $moreargs = "true" ]; then
+	args="$@"
+else
+	args+=( --since today )
+fi
+
+echo -e "\033[0;34mExecuting 'sudo journalctl CONTAINER_NAME=\"${prefix}_${container_name}_1\" -f ${args[@]}'\033[0;m"
+sudo journalctl CONTAINER_NAME="${prefix}_${container_name}_1" -f "${args[@]}"
