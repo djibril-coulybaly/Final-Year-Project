@@ -40,7 +40,7 @@ class _RealTimeResultsState extends State<RealTimeResults> {
       here before building
     */
     final response = await http.get(Uri.http(
-        '192.168.1.12:6824', '/upcoming.json', {'stop': widget.stopID}));
+        '10.156.21.26:6824', '/upcoming.json', {'stop': widget.stopID}));
 
     /* 
     Converting the JSON reults obtained from the GTFS server and mapping it to our RealTimeInformation Class Model

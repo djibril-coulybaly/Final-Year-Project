@@ -62,6 +62,11 @@ class _RootNavigationState extends State<RootNavigation> {
         that you can change the state of that child, move to another child and upon returning to the 
         previous child, the state will be preserved
       */
+      // body: PageView(
+      //   children: _pages,
+      //   // physics: const NeverScrollableScrollPhysics(),
+      //   // index: _page,
+      // ),
       body: IndexedStack(
         children: _pages,
         index: _page,

@@ -254,6 +254,19 @@ class _TicketOverviewState extends State<TicketOverview> {
                                                     ),
                                                   ],
                                                 ),
+                                                // Row(
+                                                //   children: [
+                                                //     Padding(
+                                                //       padding:
+                                                //           const EdgeInsets.only(
+                                                //               left: 8.0,
+                                                //               right: 8.0),
+                                                //       child:
+                                                //           getBalanceBasedOnListType(
+                                                //               card),
+                                                //     ),
+                                                //   ],
+                                                // ),
                                                 const SizedBox(height: 60),
 
                                                 // ID of ticket/travel card and the activation status (Only applicable to Ticket)

@@ -296,14 +296,17 @@ class _DisplayTransactionState extends State<DisplayTransaction> {
                                 color: Colors.black,
                               ),
                             ),
-                            Text(
-                              "${widget.uid}",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: GoogleFonts.manrope().fontFamily,
-                                color: Colors.black,
+                            SizedBox(
+                              width: 180,
+                              child: Text(
+                                "${widget.uid}",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  fontFamily: GoogleFonts.manrope().fontFamily,
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ],

@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
       value: FAS().user,
       initialData: null,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         // home: LandingPage(),
         home: const WrapperForFirebase(),
         // home: SelectOption(),

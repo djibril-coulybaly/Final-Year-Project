@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
       value: FAS().admin,
       initialData: null,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: const WrapperForFirebase(),
         theme: ThemeData(primarySwatch: Colors.deepPurple),
       ),
