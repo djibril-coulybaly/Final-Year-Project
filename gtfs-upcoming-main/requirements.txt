@@ -1,5 +1,0 @@
-protobuf
-gtfs-realtime-bindings
-six
-prometheus_client
-

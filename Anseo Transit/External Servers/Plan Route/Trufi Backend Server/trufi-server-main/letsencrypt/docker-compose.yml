@@ -1,0 +1,25 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.15-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app.template.conf:/etc/nginx/conf.d/app.conf
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    logging:
+      driver: "journald"
+      options:
+        tag: "{{.Name}}"
+  
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    logging:
+      driver: "journald"
+      options:
+        tag: "{{.Name}}"

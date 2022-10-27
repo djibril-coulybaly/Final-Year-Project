@@ -1,3 +1,0 @@
-﻿service_id,date,exception_type
-"y1002","20201126","2"
-"y1002","20201127","1"

@@ -1,2 +1,0 @@
-agency_id,agency_name,agency_url,agency_timezone,agency_lang
-"02","Irish Rail","https://www.transportforireland.ie","Europe/Dublin","EN"

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "330279047196",
+    "project_id": "journey-planner-79eb0",
+    "storage_bucket": "journey-planner-79eb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330279047196:android:9ecc1277e2a888416c0fd9",
+        "android_client_info": {
+          "package_name": "com.wemove.journey_planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330279047196-d36dth2muh6qaemi8tqbgkkjah5p5n7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wemove.journey_planner",
+            "certificate_hash": "1ef4c9a4de4299e9a1b7eb2869061e141f5d451c"
+          }
+        },
+        {
+          "client_id": "330279047196-36t3kup01uqn38er2c0f67mqagtv509l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUhUx4UHMrkCvd-7Hpm6Or1VUWC--DNxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330279047196-36t3kup01uqn38er2c0f67mqagtv509l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

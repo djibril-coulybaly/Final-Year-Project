@@ -1,0 +1,170 @@
+[
+  {
+    "route_id": "99-10-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Waterford - Limerick Junction Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-11-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Cobh/Midleton Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-13-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "DART",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-14-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Maynooth Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-15-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Sligo/Longford Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-16-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Rosslare Europort Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-17-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Drogheda/Dundalk Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-18-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "M3 Parkway Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-19-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Phoenix Park Tunnel Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-1-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Cork/Mallow Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-1-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Commuter Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-2-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Portlaoise/Limerick Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-2-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Commuter Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-3-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Limerick via Nenagh Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-3-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Commuter Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-4-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Kildare/Waterford Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-4-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Commuter Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-5-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Tralee Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-5-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Enterprise Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-6-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Galway Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-6-Y-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Enterprise Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-7-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Limerick Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-8-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Enterprise Service",
+    "route_type": 2
+  },
+  {
+    "route_id": "99-9-r11-1",
+    "agency_id": "02",
+    "route_short_name": "",
+    "route_long_name": "Westport Service",
+    "route_type": 2
+  }
+]

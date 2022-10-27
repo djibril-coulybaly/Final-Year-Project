@@ -1,0 +1,3 @@
+﻿from_stop_id,to_stop_id,transfer_type,min_transfer_time
+"822GIR0025","822G000007","3",""
+"822G000007","822GIR0025","3",""

@@ -1,7 +1,0 @@
-#!/bin/sh
-[ -d "./dev" ] || mkdir "./dev"
-
-cp ./nginx/app.dev.conf ./dev/app.conf
-echo "dev enviroment set up"
-
-exit 0
