@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="Anseo Transit\journey_planner\assets\logo\my_logo_invert1.png" alt="logo" width="auto" height="auto" />
+  <img src="/Anseo Transit\journey_planner\assets\logo\my_logo_invert1.png" alt="logo" width="auto" height="auto" />
   <h4>
-    <a href="https://github.com/djibril-coulybaly/Final-Year-Project/tree/development/Video%20Demonstration">View Demo</a>
+    <a href="/Video Demonstration">View Demo</a>
     <span> · </span>
     <a href="https://anseo.gitbook.io/anseo-documentation/">Documentation</a>
   </h4>
@@ -30,6 +30,8 @@
 - [Getting Started](#toolbox-getting-started)
 - [How to Operate?](#eyes-how-to-operate)
 
+<br />
+
 <!-- About the Project -->
 
 ## :star2: About the Project
@@ -42,6 +44,8 @@ By upgrading the flaws surrounding these individual entities and providing solut
 
 Three applications were developed and implemented to serve as a competitor to the current applications that exist in Ireland
 
+<br />
+
 <!-- Applications -->
 
 ## :iphone: Applications
@@ -53,7 +57,7 @@ Three applications were developed and implemented to serve as a competitor to th
 <table style="background-color: #fafafa;">
   <tr>
       <td>
-          <img align="center" width="700" src="Anseo Transit\journey_planner\assets\logo\logo1.png" alt="screenshot">
+          <img align="center" width="100%" src="/Anseo Transit\journey_planner\assets\logo\logo1.png" alt="screenshot">
       </td>
       <td>
           <p align="center">
@@ -74,6 +78,8 @@ An all-in-one public transportation application focused on making the commuters 
     </tr>
 </table>
 
+<br />
+
 <!-- Anseo Validator -->
 
 ### :two: Anseo Validator
@@ -85,7 +91,7 @@ An all-in-one public transportation application focused on making the commuters 
 A validating application that allows drivers working with public transportation operators to verify the validity of a ticket and/or travel card and process payment on board a fleet via QR code/NFC capabilities.         </p>
      </td>
       <td>
-          <img align="center" width="700" src="Anseo Validator\validator\assets\logo\logo1_black.png" alt="screenshot">
+          <img align="center" width="500" height="auto" src="/Anseo Validator\validator\assets\logo\logo1_black.png" alt="screenshot">
       </td>
   </tr>
     <tr>
@@ -104,13 +110,15 @@ A validating application that allows drivers working with public transportation 
     </tr>
 </table>
 
+<br />
+
 <!-- Anseo Admin -->
 
 ### :three: Anseo Admin
 
 <table style="background-color: #fafafa;">
   <tr>
-    <td><img align="center" width="700" src="Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" alt="screenshot"></td>
+    <td><img align="center" width="500" height="auto" src="/Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" alt="screenshot"></td>
     <td><p align="center">
 An administration application which offers safe and secure management of various accounts and configuration of fare types.        </p></td>
   </tr>
@@ -128,39 +136,35 @@ information of a <i><b>User</b>/<b>Driver</b>/<b>Admin</b> account</i></li>
     </tr>
 </table>
 
+<br />
+
 <!-- Video Demonstration -->
 
 ## :camera: Video Demonstration
 
 <div align="center">
     <h3>Anseo Transit</h3>
-    <video width="100%" controls>
-        <source src="Video Demonstration/Anseo Transit.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video width="100%" controls src="https://user-images.githubusercontent.com/46174096/203685586-3673811d-e357-4763-98d3-19efe0f4d907.mp4" type="video/mp4">
 	</video> 
 </div>
 
 <br/>
-
 
 <div align="center">
     <h3>Anseo Validator</h3>
-    <video width="100%" controls>
-        <source src="Video Demonstration/Anseo Validator.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video width="100%" controls src="https://user-images.githubusercontent.com/46174096/203685632-f8c62eed-d7da-4d8e-8641-3f89f5033849.mp4" type="video/mp4">
 	</video> 
 </div>
 
 <br/>
 
-
 <div align="center">
     <h3>Anseo Admin</h3>
-    <video width="100%" controls>
-        <source src="Video Demonstration/Anseo Admin.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video width="100%" controls src="https://user-images.githubusercontent.com/46174096/203685650-1ae91435-7c48-4154-859d-bb7c0a0eb4f5.mp4" type="video/mp4">
 	</video> 
 </div>
+
+<br />
 
 <!-- TechStack -->
 
@@ -173,6 +177,8 @@ These are the programming languages that were utilised to implement the importan
 - [![My Skills](https://img.icons8.com/color/64/000000/dart.png)](https://skillicons.dev) - [Dart](https://dart.dev/) -  is a type safe, general-purpose, object-orientated programming language that’s designed for  building fast applications on multiple devices.
 - [![My Skills](https://img.icons8.com/nolan/64/1A6DFF/C822FF/python.png)](https://skillicons.dev) - [Python](https://www.python.org/) - Python is a dynamically typed, multi-paradigm programming language that supports object-orientated, functional and logic programming
 
+<br />
+
 ### Front End
 
 These are the technologies that were utilised to build the user experience, including the user interface and the client-side functionality of the application:
@@ -182,11 +188,15 @@ These are the technologies that were utilised to build the user experience, incl
 - [![My Skills](https://img.icons8.com/fluent/64/000000/nfc-logo.png)](https://skillicons.dev) - [Near Field Communication (NFC)](https://en.wikipedia.org/wiki/Near-field_communication) - is based on the adaptation of Radio-Frequency Identification (RFID)  technology. Its primary function is to store and transmit data between other NFC devices, without the requirement for power
 - [![](https://img.icons8.com/nolan/64/qr-code.png)](https://skillicons.dev) - [QR Code](https://en.wikipedia.org/wiki/QR_code) - Quick Response Code is a two-dimensional black & white square barcode which can store and convey information such as Uniform Resource Locator (URL) links, data authentication and payment transactions
 
+<br />
+
 ### Database
 
 Below shows the technologies utilised for storing and quering data within the application:
 
 - [![My Skills](https://img.icons8.com/color/64/000000/firebase.png)](https://skillicons.dev) - [Firebase](https://firebase.google.com/) - is a Cloud-hosted, NoSQL database built on the Google infrastructure. Using a document-model, it allows to data to be stored, scaled and synchronized in real time among users. 
+
+<br />
 
 ### Server
 
@@ -197,17 +207,23 @@ These are the technologies that allows the application to send and receive reque
 - <img src="https://seeklogo.com/images/M/mapbox-logo-D6FDDD219C-seeklogo.com.png" alt="logo" width="64" height="auto" /> - [Mapbox](https://www.mapbox.com/) - is a map service that allows for creating custom maps and interactive data visualisations.
 - [![img](https://img.icons8.com/nolan/64/stripe.png)](https://skillicons.dev) - [Stripe](https://stripe.com/ie) - is an online payment solution that allows users to process and receive payments.
 
+<br />
+
 ### Version Control
 
 These were the frameworks utilised in order to track and manage changes to the codebase/files of the application:
 
 - [![My Skills](https://img.icons8.com/nolan/64/1A6DFF/C822FF/github.png)](https://skillicons.dev) [![My Skills](https://img.icons8.com/nolan/64/git.png)](https://skillicons.dev)- [Github](https://github.com/) / [Git](https://git-scm.com/) - is a platform that allow users to perform version control on their projects using a web and/or desktop graphical interface powered by the Git Repository
 
+<br />
+
 <!-- Getting Started -->
 
 ## :toolbox: Getting Started
 
 Have a look at the documentation [here](https://anseo.gitbook.io/anseo-documentation/) to get started.
+
+<br />
 
 <!-- Usage -->
 
@@ -217,14 +233,14 @@ For documentation and detailed explanation of how to use each application, pleas
 
 <table>
   <tr align="center">
-    <td><a href="https://github.com/djibril-coulybaly/Final-Year-Project/tree/development/Anseo%20Transit">Anseo Transit</a></td>
-      <td><a href="https://github.com/djibril-coulybaly/Final-Year-Project/tree/development/Anseo%20Validator">Anseo Validator</a></td>
-      <td><a href="https://github.com/djibril-coulybaly/Final-Year-Project/tree/development/Anseo%20Admin">Anseo Admin</a></td>
+    <td><a href="/Anseo Transit">Anseo Transit</a></td>
+      <td><a href="/Anseo Validator">Anseo Validator</a></td>
+      <td><a href="/Anseo Admin">Anseo Admin</a></td>
   </tr>
   <tr>
-    <td><img src="Anseo Transit\journey_planner\assets\logo\logo1.png" ></td>
-    <td><img src="Anseo Validator\validator\assets\logo\logo1_black.png" width="350" ></td>
-    <td><img src="Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" width="400" ></td>
+    <td><img src="/Anseo Transit\journey_planner\assets\logo\logo1.png" ></td>
+    <td><img src="/Anseo Validator\validator\assets\logo\logo1_black.png" width="350" ></td>
+    <td><img src="/Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" width="400" ></td>
   </tr>
 </table>
 
