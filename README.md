@@ -15,6 +15,7 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
+- [Awards](#trophy-awards)
 - [Applications](#iphone-applications)
   - [Anseo Transit](#one-anseo-transit)
   - [Anseo Validator](#two-anseo-validator)
@@ -42,6 +43,18 @@ This project places emphasis on the workings behind a public transportation syst
 By upgrading the flaws surrounding these individual entities and providing solution to improve the interdependence between them, it can serve as a blueprint in how governments and public transportation operators alike can reform this sector to meet the needs and demands of commuters.
 
 Three applications were developed and implemented to serve as a competitor to the current applications that exist in Ireland
+
+<br />
+
+<!-- Awards -->
+
+## :trophy: Awards
+
+This project won the TU Dublin Hothouse **_“Most Commercialisable Project”_** Prize at the TU Dublin Computer Science Project Fair 2022.
+
+|                                   Project Fair Poster                                    |                                    Receiving Award                                    |                                    Award Plaque                                    |
+| :--------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| <img src="Screenshots/Real Time/Real Time Info Options.jpg" alt="Project Fair Poster" /> | <img src="Screenshots/Real Time/Search by Stop Number 1.jpg" alt="Receiving Award" /> | <img src="Screenshots/Real Time/Search by Stop Number 2.jpg" alt="Award Plaque" /> |
 
 <br />
 
@@ -239,6 +252,6 @@ For documentation and detailed explanation of how to use each application, pleas
   <tr>
     <td><img src="/Anseo Transit\journey_planner\assets\logo\logo1.png" ></td>
     <td><img src="/Anseo Validator\validator\assets\logo\logo1_black.png" width="350" ></td>
-    <td><img src="/Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" width="400" ></td>
+    <td><img src="/Anseo Admin\anseo_admin\assets\logo\logo1_invert.png" width="400" style="background-color:#f5f5f5"></td>
   </tr>
 </table>
