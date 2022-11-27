@@ -23,13 +23,11 @@
 - [Features](#dart-features)
 - [Getting Started](#toolbox-getting-started)
 - [Screenshots](#iphone-screenshots)
-
-  - [Introduction / Authentication](#one-introduction-authentication)
+  - [Authentication](#one-authentication)
   - [Configure Travel Card Type](#two-configure-travel-card-type)
   - [Add Account](#three-add-account)
   - [Modify Account](#four-modify-account)
   - [Delete Account](#five-delete-account)
-
 - [Directory Structure](#file_folder-directory-structure)
 - [System Design](#triangular_ruler-system-design)
   - [Methodology](#traffic_light-methodology)
@@ -65,9 +63,9 @@ Have a look at the documentation [here](https://anseo.gitbook.io/anseo-documenta
 
 ## :iphone: Screenshots
 
-<!-- Introduction / Authentication-->
+<!-- Authentication -->
 
-### :one: Introduction / Authentication
+### :one: Authentication
 
 |                          Splash Screen                          |                         Landing Page                          |                       Sign In                       |                       Sign Up                       |
 | :-------------------------------------------------------------: | :-----------------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: |
@@ -240,12 +238,12 @@ Use Case Diagrams were created to represent the how the system would behave in l
 
 | Color            | Hex                                                                                                                               |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Primary Color    | ![#673AB7](https://via.placeholder.com/10/673AB7?text=+) #673AB7                                                                  |
-| Secondary Color  | ![#9575CD](https://via.placeholder.com/10/9575CD?text=+) #9575CD                                                                  |
-| Background Color | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF                                                                  |
-| Accent Color     | ![#9FA8DA](https://via.placeholder.com/10/9FA8DA?text=+) #9FA8DA                                                                  |
-| Icon Gradient    | ![#1A6DFF](https://via.placeholder.com/10/1A6DFF?text=+) #1A6DFF ![#C822FF](https://via.placeholder.com/10/C822FF?text=+) #C822FF |
-| Text Color       | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000                                                                  |
+| Primary Color    | ![#673AB7](https://via.placeholder.com/10/673AB7/673AB7.png) #673AB7                                                                  |
+| Secondary Color  | ![#9575CD](https://via.placeholder.com/10/9575CD/9575CD.png) #9575CD                                                                  |
+| Background Color | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF/FFFFFF.png) #FFFFFF                                                                  |
+| Accent Color     | ![#9FA8DA](https://via.placeholder.com/10/9FA8DA/9FA8DA.png) #9FA8DA                                                                  |
+| Icon Gradient    | ![#1A6DFF](https://via.placeholder.com/10/1A6DFF/1A6DFF.png) #1A6DFF </br> ![#C822FF](https://via.placeholder.com/10/C822FF/C822FF.png) #C822FF |
+| Text Color       | ![#000000](https://via.placeholder.com/10/000000/000000.png) #000000                                                                  |
 
 ---
 
@@ -253,9 +251,9 @@ Use Case Diagrams were created to represent the how the system would behave in l
 
 | Color               | Hex                                                                                                                                                                                                | Result                                                                                  |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Student Travel Card | ![#4158D0](https://via.placeholder.com/10/4158D0?text=+) #4158D0 ![#C850C0](https://via.placeholder.com/10/C850C0?text=+) #C850C0 ![#FFCC70](https://via.placeholder.com/10/FFCC70?text=+) #FFCC70 | <img src="..\System Design\Travelcards\student_card_1.jpg" alt="Student Travel Card" /> |
-| Adult Travel Card   | ![#0061FF](https://via.placeholder.com/10/0061FF?text=+) #0061FF ![#60EFFF](https://via.placeholder.com/10/60EFFF?text=+) #60EFFF                                                                  | <img src="..\System Design\Travelcards\adult_card_1.jpg" alt="Adult Travel Card" />     |
-| Child Travel Card   | ![#8EC5FC](https://via.placeholder.com/10/8EC5FC?text=+) #8EC5FC ![#E0C3FC](https://via.placeholder.com/10/E0C3FC?text=+) #E0C3FC                                                                  | <img src="..\System Design\Travelcards\child_card_1.jpg" alt="Child Travel Card" />     |
+| Student Travel Card | ![#4158D0](https://via.placeholder.com/10/4158D0/4158D0.png) #4158D0 </br> ![#C850C0](https://via.placeholder.com/10/C850C0/C850C0.png) #C850C0 </br> ![#FFCC70](https://via.placeholder.com/10/FFCC70/FFCC70.png) #FFCC70 | <img src="..\System Design\Travelcards\student_card_1.jpg" alt="Student Travel Card" /> |
+| Adult Travel Card   | ![#0061FF](https://via.placeholder.com/10/0061FF/0061FF.png) #0061FF </br> ![#60EFFF](https://via.placeholder.com/10/60EFFF/60EFFF.png) #60EFFF                                                                  | <img src="..\System Design\Travelcards\adult_card_1.jpg" alt="Adult Travel Card" />     |
+| Child Travel Card   | ![#8EC5FC](https://via.placeholder.com/10/8EC5FC/8EC5FC.png) #8EC5FC </br> ![#E0C3FC](https://via.placeholder.com/10/E0C3FC/E0C3FC.png) #E0C3FC                                                                  | <img src="..\System Design\Travelcards\child_card_1.jpg" alt="Child Travel Card" />     |
 
 ---
 
@@ -267,8 +265,8 @@ Use Case Diagrams were created to represent the how the system would behave in l
 
 | Color           | Hex                                                                                                                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Logo Background | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF                                                                  |
-| Logo Text       | ![#4158D0](https://via.placeholder.com/10/4158D0?text=+) #4158D0 ![#C850C0](https://via.placeholder.com/10/C850C0?text=+) #C850C0 |
+| Logo Background | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF/FFFFFF.png) #FFFFFF                                                                  |
+| Logo Text       | ![#4158D0](https://via.placeholder.com/10/4158D0/4158D0.png) #4158D0 </br> ![#C850C0](https://via.placeholder.com/10/C850C0/C850C0.png) #C850C0 |
 
 </td><td>
 
@@ -283,16 +281,16 @@ Use Case Diagrams were created to represent the how the system would behave in l
 ## :electric_plug: Plugins
 
 | Name                                                                          | Version  | Usage                                                                                                                           |
-| ----------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- | --- |
-| [**encrypt**](https://pub.dev/packages/encrypt)                               | ^5.0.1   | Generate cryptographically secure random keys and IVs                                                                           |     |
-| [**firebase_auth**](https://pub.dev/packages/firebase_auth)                   | ^3.3.13  | Enabling Android and iOS authentication using passwords, phone numbers and identity providers like Google, Facebook and Twitter |     |
-| [**cloud_firestore**](https://pub.dev/packages/cloud_firestore)               | ^3.1.11  | Use the Cloud Firestore API a cloud-hosted, noSQL database with live synchronization                                            |     |
-| [**nfc_manager**](https://pub.dev/packages/nfc_manager)                       | ^3.1.1   | Accessing the NFC features on Android and iOS                                                                                   |     |
-| [**provider**](https://pub.dev/packages/provider)                             | ^6.0.2   | Dependency injection and state management                                                                                       |     |
-| [**sweetsheet**](https://pub.dev/packages/sweetsheet)                         | ^0.4.0   | Show beautiful bottom sheet as confirmation dialog                                                                              |     |
-| [**google_fonts**](https://pub.dev/packages/google_fonts)                     | ^2.3.1   | Use fonts from fonts.google.com                                                                                                 |     |
-| [**flutter_native_splash**](https://pub.dev/packages/flutter_native_splash)   | ^2.1.2+1 | Customize Flutter's default white native splash screen with background color and splash image                                   |     |
-| [**flutter_launcher_icons**](https://pub.dev/packages/flutter_launcher_icons) | ^0.9.2   | Updating application launcher icon                                                                                              |     |
+| ----------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [**encrypt**](https://pub.dev/packages/encrypt)                               | ^5.0.1   | Generate cryptographically secure random keys and IVs                                                                           |
+| [**firebase_auth**](https://pub.dev/packages/firebase_auth)                   | ^3.3.13  | Enabling Android and iOS authentication using passwords, phone numbers and identity providers like Google, Facebook and Twitter |
+| [**cloud_firestore**](https://pub.dev/packages/cloud_firestore)               | ^3.1.11  | Use the Cloud Firestore API a cloud-hosted, noSQL database with live synchronization                                            |
+| [**nfc_manager**](https://pub.dev/packages/nfc_manager)                       | ^3.1.1   | Accessing the NFC features on Android and iOS                                                                                   |
+| [**provider**](https://pub.dev/packages/provider)                             | ^6.0.2   | Dependency injection and state management                                                                                       |
+| [**sweetsheet**](https://pub.dev/packages/sweetsheet)                         | ^0.4.0   | Show beautiful bottom sheet as confirmation dialog                                                                              |
+| [**google_fonts**](https://pub.dev/packages/google_fonts)                     | ^2.3.1   | Use fonts from fonts.google.com                                                                                                 |
+| [**flutter_native_splash**](https://pub.dev/packages/flutter_native_splash)   | ^2.1.2+1 | Customize Flutter's default white native splash screen with background color and splash image                                   |
+| [**flutter_launcher_icons**](https://pub.dev/packages/flutter_launcher_icons) | ^0.9.2   | Updating application launcher icon                                                                                              |
 
 ---
 
@@ -300,4 +298,4 @@ Use Case Diagrams were created to represent the how the system would behave in l
 
 ## :construction: Development Process
 
-The documentation process for Anseo Transit/Validator/Admin can be viewed [here](https://anseo.gitbook.io/anseo-documentation/)
+The documentation process for Anseo Admin can be viewed [here](https://anseo.gitbook.io/anseo-documentation/)
