@@ -1,0 +1,786 @@
+[
+  {
+    "route_id": "60-1-b12-1",
+    "agency_id": 978,
+    "route_short_name": 1,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-11-b12-1",
+    "agency_id": 978,
+    "route_short_name": 11,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-116-b12-1",
+    "agency_id": 978,
+    "route_short_name": 116,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-118-b12-1",
+    "agency_id": 978,
+    "route_short_name": 118,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-120-b12-1",
+    "agency_id": 978,
+    "route_short_name": 120,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-122-b12-1",
+    "agency_id": 978,
+    "route_short_name": 122,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-123-b12-1",
+    "agency_id": 978,
+    "route_short_name": 123,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-13-b12-1",
+    "agency_id": 978,
+    "route_short_name": 13,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-130-b12-1",
+    "agency_id": 978,
+    "route_short_name": 130,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-14-b12-1",
+    "agency_id": 978,
+    "route_short_name": 14,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-140-b12-1",
+    "agency_id": 978,
+    "route_short_name": 140,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-142-b12-1",
+    "agency_id": 978,
+    "route_short_name": 142,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-145-b12-1",
+    "agency_id": 978,
+    "route_short_name": 145,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-15-b12-1",
+    "agency_id": 978,
+    "route_short_name": 15,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-15D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "15d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-150-b12-1",
+    "agency_id": 978,
+    "route_short_name": 150,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-155-b12-1",
+    "agency_id": 978,
+    "route_short_name": 155,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-151-b12-1",
+    "agency_id": 978,
+    "route_short_name": 151,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-15A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "15a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-15B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "15b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-16-b12-1",
+    "agency_id": 978,
+    "route_short_name": 16,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-16D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "16d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-26-b12-1",
+    "agency_id": 978,
+    "route_short_name": 26,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-27-b12-1",
+    "agency_id": 978,
+    "route_short_name": 27,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-27A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "27a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-27B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "27b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-27X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "27x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-31D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "31d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-32X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "32x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-33-b12-1",
+    "agency_id": 978,
+    "route_short_name": 33,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-33D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "33d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-33E-b12-1",
+    "agency_id": 978,
+    "route_short_name": "33e",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-33X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "33x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-37-b12-1",
+    "agency_id": 978,
+    "route_short_name": 37,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-38-b12-1",
+    "agency_id": 978,
+    "route_short_name": 38,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-38A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "38a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-38B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "38b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-38D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "38d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-39-b12-1",
+    "agency_id": 978,
+    "route_short_name": 39,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-39A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "39a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-39X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "39x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-4-b12-1",
+    "agency_id": 978,
+    "route_short_name": 4,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-40-b12-1",
+    "agency_id": 978,
+    "route_short_name": 40,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-40B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "40b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-40D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "40d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-40E-b12-1",
+    "agency_id": 978,
+    "route_short_name": "40e",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-41-b12-1",
+    "agency_id": 978,
+    "route_short_name": 41,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-41B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "41b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-41C-b12-1",
+    "agency_id": 978,
+    "route_short_name": "41c",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-41D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "41d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-41X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "41x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-42-b12-1",
+    "agency_id": 978,
+    "route_short_name": 42,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-42D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "42d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-43-b12-1",
+    "agency_id": 978,
+    "route_short_name": 43,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-44-b12-1",
+    "agency_id": 978,
+    "route_short_name": 44,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-44B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "44b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-46A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "46a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-46E-b12-1",
+    "agency_id": 978,
+    "route_short_name": "46e",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-47-b12-1",
+    "agency_id": 978,
+    "route_short_name": 47,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-49-b12-1",
+    "agency_id": 978,
+    "route_short_name": 49,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-51D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "51d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-52-b12-1",
+    "agency_id": 978,
+    "route_short_name": 52,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-53-b12-1",
+    "agency_id": 978,
+    "route_short_name": 53,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-54A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "54a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-56A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "56a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-6-b12-1",
+    "agency_id": 978,
+    "route_short_name": 6,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-61-b12-1",
+    "agency_id": 978,
+    "route_short_name": 61,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-65-b12-1",
+    "agency_id": 978,
+    "route_short_name": 65,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-65B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "65b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-68-b12-1",
+    "agency_id": 978,
+    "route_short_name": 68,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-68X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "68x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-68A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "68a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-69-b12-1",
+    "agency_id": 978,
+    "route_short_name": 69,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-69X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "69x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-7-b12-1",
+    "agency_id": 978,
+    "route_short_name": 7,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-7A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "7a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-70-b12-1",
+    "agency_id": 978,
+    "route_short_name": 70,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-70D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "70d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-77A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "77a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-77X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "77x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-79-b12-1",
+    "agency_id": 978,
+    "route_short_name": 79,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-79A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "79a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-7B-b12-1",
+    "agency_id": 978,
+    "route_short_name": "7b",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-7D-b12-1",
+    "agency_id": 978,
+    "route_short_name": "7d",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-83-b12-1",
+    "agency_id": 978,
+    "route_short_name": 83,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-83A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "83a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-84-b12-1",
+    "agency_id": 978,
+    "route_short_name": 84,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-84A-b12-1",
+    "agency_id": 978,
+    "route_short_name": "84a",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-84X-b12-1",
+    "agency_id": 978,
+    "route_short_name": "84x",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-9-b12-1",
+    "agency_id": 978,
+    "route_short_name": 9,
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-H1-b12-1",
+    "agency_id": 978,
+    "route_short_name": "H1",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-H2-b12-1",
+    "agency_id": 978,
+    "route_short_name": "H2",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-H3-b12-1",
+    "agency_id": 978,
+    "route_short_name": "H3",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-H9-b12-1",
+    "agency_id": 978,
+    "route_short_name": "H9",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C1-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C1",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C2-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C2",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C3-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C3",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C4-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C4",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C5-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C5",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-C6-b12-1",
+    "agency_id": 978,
+    "route_short_name": "C6",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-P29-b12-1",
+    "agency_id": 978,
+    "route_short_name": "P29",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-L53-b12-1",
+    "agency_id": 978,
+    "route_short_name": "L53",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-L54-b12-1",
+    "agency_id": 978,
+    "route_short_name": "L54",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-L58-b12-1",
+    "agency_id": 978,
+    "route_short_name": "L58",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-L59-b12-1",
+    "agency_id": 978,
+    "route_short_name": "L59",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X25-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X25",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X26-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X26",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X27-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X27",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X28-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X28",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X30-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X30",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X31-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X31",
+    "route_long_name": "",
+    "route_type": 3
+  },
+  {
+    "route_id": "60-X32-b12-1",
+    "agency_id": 978,
+    "route_short_name": "X32",
+    "route_long_name": "",
+    "route_type": 3
+  }
+]

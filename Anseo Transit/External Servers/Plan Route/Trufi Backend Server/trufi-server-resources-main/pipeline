@@ -1,0 +1,201 @@
+#!/bin/bash
+# This script runs a specified pipeline from the config. That pipeline then executes the builders in the order as specified in the config.
+# It determines how to execute the builders by looking in their README.md file and grapping the commands from a defined pattern.
+
+# -------------------------------------------------------------
+
+# Usage
+# pipeline <configFile> <name of pipeline configured in the config>
+
+# Example usage
+# pipeline Hamburg-Germany pipelineTileserverAndPhoton
+
+# Example usages with options
+
+# Example usage --dry-run (does not execute anything, just simulates)
+# pipeline Hamburg-Germany pipelineTileserverAndPhoton --dry-run
+
+# Example usage --no-color (useful for logging to a file or abother logging mechanism)
+# pipeline Hamburg-Germany pipelineTileserverAndPhoton --no-color
+
+# Of course options can be combined like
+# pipeline Hamburg-Germany pipelineTileserverAndPhoton --dry-run --no-color
+# to make a simulation and to not get colorized output
+
+# -------------------------------------------------------------
+
+# That defined pattern is as follows:
+# 1. The script looks for ta line containing the following content: ## How to use
+# 2. The script extracts all content as long as it does not find a line containing ## or as long it does not reach the end of all lines
+# 3. In the extract it looks for a line containing the following content: ```bash
+# 4. The script extracts all content from the extract as long as it does not find a line containing ``` or as long it does not reach the end of all lines
+# 5. It has now the commands. Each line correspondends to an element in the array (array delimited by new line)
+
+# Pattern matching based on an example:
+# -------------------------------------------------------------
+
+# We have the following content from a README file we've read:
+
+## MBTiles Builder
+# 
+# | &nbsp;                                 | &nbsp;                                                       |
+# | -------------------------------------- | ------------------------------------------------------------ |
+# | The following extensions depend on it  | [tileserver](https://github.com/trufi-association/trufi-server/tree/main/extensions/tileserver) |
+# | This depends on the following builders | [map-pbf-builder](../map-pbf-builder)                        |
+# 
+### Description
+# 
+# Generates the background map tiles in the `*.mbtile` format used by many tile serving services like [OpenMapTiles](https://github.com/openmaptiles/openmaptiles) what we use for our extension [tileserver](https://github.com/trufi-association/trufi-server/tree/main/extensions/tileserver). Maps generated using this builder need to credit `© OpenMapTiles © OpenStreetMap contributors`. Attribution won't be applied automatically. This builder uses [OpenMapTiles](https://github.com/openmaptiles/openmaptiles) underneath.
+# 
+### How to use
+# 
+# This tool will generate a `.mbtile` file which contains the necessary data for generating map background tiles either on the fly (upon request by the client) or static using the builder [*Static Map Tiles Builder*](./static-map-tiles-builder). Run the following commands:
+# 
+# ```bash
+# export $(cat ../$envfile | xargs)
+# bash generate_mbtiles.sh
+# ```
+# 
+# - The `.mbtile` file out is located at `../data/<Country-City>/tileserver/region/myregion.osm.pbf`
+# 
+
+# The first extract will be:
+
+### How to use
+# 
+# This tool will generate a `.mbtile` file which contains the necessary data for generating map background tiles either on the fly (upon request by the client) or static using the builder [*Static Map Tiles Builder*](./static-map-tiles-builder). Run the following commands:
+# 
+# ```bash
+# export $(cat ../$envfile | xargs)
+# bash generate_mbtiles.sh
+# ```
+# 
+# - The `.mbtile` file out is located at `../data/<Country-City>/tileserver/region/myregion.osm.pbf`
+# 
+
+# The second extract will be:
+
+# export $(cat ../$envfile | xargs)
+# bash generate_mbtiles.sh
+
+# -------------------------------------------------------------
+
+configFile="$1"
+configFile=${configFile//".env"/};
+noColor=$(echo "$@" | grep "\-\-no-color")
+dryRun=$(echo "$@" | grep "\-\-dry-run")
+
+
+export $(cat "./config/$configFile.env" | xargs)
+export configFile=$configFile
+export pipelineName=$2
+
+pipeline="${!pipelineName}"
+pipeline=${pipeline//;/ };
+pipeline=( $pipeline )
+
+extract=()
+input=()
+if [ -z "$noColor" ]; then # coloring is allowed
+	titleColor="\033[0;33m"
+ 	primaryColor="\033[0;34m"
+ 	secondaryColor="\033[0;35m"
+ 	textColor=""
+ 	colorEnd="\033[0;m"
+fi
+
+
+extractFromArray() { # extraction algorithm
+	start_find="$1"
+	end_find="$2"
+	extract=()
+	addmode=""
+	# taken from https://linuxize.com/post/how-to-read-a-file-line-by-line-in-bash/ and modified
+	for line in "${input[@]}"; do
+		start=`echo $line | grep -i "$start_find"`
+		end=`echo $line | grep -i "$end_find"`
+		if ! [ -z "$addmode" ]; then
+			if ! [ -z "$end" ]; then # if the line contains $end then
+				addmode="" # unset add marker
+				continue
+			fi
+			line=${line//" "/"#"}
+			extract+=( "$line" )
+		else
+			# if add marker hasn't been set
+			if ! [ -z "$start" ]; then # beginning of the entry we want to extract found
+				addmode="true" # set add marker
+				#echo "  start"
+				continue
+			fi
+		fi
+	done
+}
+
+startDateTime=$(date +"%x %X %Z")
+echo -e "${titleColor}# Run report: pipeline '$pipelineName' from $startDateTime $colorEnd"
+echo ""
+
+echo -e "${textColor}Starting pipeline \`$pipelineName\` for environment \`$configFile\` ...$colorEnd"
+echo -e "${textColor}Date & Time started: $startDateTime $colorEnd"
+if ! [ -z "$dryRun" ]; then # simulation
+	echo ""
+	echo -e "${textColor}This is a dry-run. In that mode no commands are executed actually! $colorEnd"
+	echo ""
+fi
+
+echo ""
+echo "- [Executing builders](#executing-builders)"
+for builder in "${pipeline[@]}"; do
+	echo "  - [$builder](#$builder)"
+done
+echo "- [Clean up](#clean-up)"
+echo ""
+
+getCommandsToExecute() {
+	extract=()
+	input=()
+
+	echo -e "${textColor}<u>Reading run configuration from \`$builder\`'s [README](./$builder/README.md) ...</u>$colorEnd"
+	# read file and convert its content in an array delimited by new line
+	readarray input < "./README.md"
+	
+	extractFromArray "## How to use" "##"
+	input=(${extract[@]})
+	extract=()
+	
+	extractFromArray "\`\`\`bash" "\`\`\`"
+	
+}
+
+echo -e "${primaryColor}## Executing builders $colorEnd"
+echo ""
+
+for builder in "${pipeline[@]}"; do
+	echo ${secondaryColor}
+	echo -e "${secondaryColor}### $builder $colorEnd"
+	echo ""
+	cd $builder
+	getCommandsToExecute $builder
+	for cmd in "${extract[@]}"; do
+		cmd=${cmd//"#"/" "}
+		echo -e "${textColor}<u>Executing command</u> \`$cmd\` ... $colorEnd"
+		if [ -z "$dryRun" ]; then # no simulation
+			eval $cmd
+		else # simulation
+			echo "> The output of command execution does not exist in the simulation mode"
+			echo ""
+		fi
+	done
+	cd ../
+done
+
+echo -e "${primaryColor}## Clean up"
+echo ""
+echo "${textColor}<u>Executing command</u> \`sudo chown -R $USER:$USER ./data --verbose\`"
+if [ -z "$dryRun" ]; then # no simulation
+	sudo chown -R $USER:$USER ./data --verbose
+else
+	echo "> The output of command execution does not exist in the simulation mode"
+	echo ""
+fi
